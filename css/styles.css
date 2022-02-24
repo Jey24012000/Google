@@ -49,7 +49,7 @@ body{
     width: 100%;
     margin: 0 auto;
     height: auto;
-    margin-top: 200px;
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,4 +121,36 @@ body{
 }
 .principal--language span{
     color: #8ab4f8;
+}
+.principal--language span:hover{
+    text-decoration: underline;
+}
+.footer-container{
+    margin-top: 150px;
+    background-color: #171717;
+    color: #9aa0a6;
+}
+.footer-container .container--country{
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border-bottom: 1px solid #212327;
+}
+.footer-container .container--more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container--more .more-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.footer-container .container--more a{
+    text-decoration: none;
+    padding: 10px 28px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #9aa0a6;
+    
 }
