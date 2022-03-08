@@ -16,6 +16,7 @@ body{
     width: auto;
     min-width: 400px;
     height: 100vh;
+    position: relative;
     
 
 }
@@ -32,7 +33,11 @@ body{
     list-style: none;
     margin-top: 20px;
     margin-right: 12px;
-    vertical-align: middle;  
+    vertical-align: middle; 
+    cursor: pointer; 
+}
+.header--ul .ul-decoration{
+    padding: 6px;
 }
 .header--ul .ul-decoration:hover{
     text-decoration: underline;
@@ -43,13 +48,23 @@ body{
     display: inline-block;
     width: 30px;
     height: 30px;
+    
 }
+
+.header--ul li .puntos:hover{
+    background-color: #303134;
+    border-radius: 50px;
+}
+.header--ul li span .user{
+    border-radius: 50px;
+}
+
 
 .section--principal{
     width: 100%;
     margin: 0 auto;
     height: auto;
-    margin-top: 170px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,10 +72,11 @@ body{
 .section--principal .principal--img{
     width: 280px;
     margin: 0 auto;
+    cursor: pointer;
 }
 .principal--search{
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     background-color: #202124;
     border: 1px solid #5f6368;
     margin: 0 auto;
@@ -90,29 +106,40 @@ body{
     background-color: transparent;
     outline: none;
     color: white;
+    font-size: 1.6rem;
     
 }
 
 .principal-buttons{
+    height: 40px;
+    width: auto;
     margin: 0 auto;
     margin-top: 30px;
     
     
 }
 .button--model{
+    width: 180px;
+    height: 35px;
     background-color: #202124;
-    color: white;
+    color: #e8eaed;
     padding: 8px;
     border: none;
     background-color: #303134;
     box-shadow: 0 1px 3px rgba(23,23,23,0.24);
     font-size: 1.4rem;
+    cursor: pointer;
+}
+.button--model:hover{
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
 }
 .principal-buttons .derecha{
-    margin-right: 10px;
+    margin-right: 4px;
 }
 .principal-buttons .izquierda{
-    margin-right: 10px;
+    margin-left: 4px;
 }
 .section--principal .principal--language{
     margin-top: 30px;
@@ -121,14 +148,19 @@ body{
 }
 .principal--language span{
     color: #8ab4f8;
+    cursor: pointer;
 }
 .principal--language span:hover{
     text-decoration: underline;
 }
 .footer-container{
-    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    margin-top: 95px;
     background-color: #171717;
     color: #9aa0a6;
+    position: absolute;
+    bottom: 0;
 }
 .footer-container .container--country{
     font-size: 1.5rem;
@@ -136,6 +168,7 @@ body{
     border-bottom: 1px solid #212327;
 }
 .footer-container .container--more{
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,3 +187,12 @@ body{
     color: #9aa0a6;
     
 }
+.footer-container .container--more a:hover{
+    text-decoration: underline;
+}
+.footer-container .container--more .settings{
+    display: flex;
+    margin: 0 auto;
+}
+
+

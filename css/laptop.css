@@ -1,3 +1,21 @@
-.section--principal{
-    margin-top: 40px;
+
+.footer-container{
+    margin-top: 135px;
+}
+
+.footer-container .container--more .settings{
+    
+    margin: 0;
+}
+@media (min-width:1030px){
+    .footer-container .container--more{
+    
+        justify-content:space-around;
+    }
+}
+@media (min-width:1200px){
+    .footer-container .container--more{
+    
+        justify-content:space-between;
+    }
 }
